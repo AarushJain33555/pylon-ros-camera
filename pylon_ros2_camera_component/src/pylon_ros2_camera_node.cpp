@@ -594,7 +594,7 @@ bool PylonROS2CameraNode::initAndRegister()
         RCLCPP_WARN_STREAM(LOGGER, "Failed to connect camera device with device user id: "<< this->pylon_camera_parameter_set_.deviceUserID() << ". "
                                     << "Trying again in a bit...");
 
-        /*
+        
         const char* scriptPath = "/ros_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/restart_docker.sh";
         
 
@@ -602,7 +602,7 @@ bool PylonROS2CameraNode::initAndRegister()
         std::string command = std::string(scriptPath) + " " + argument;
         
         system(command.c_str());
-        */
+        
         
         
         
